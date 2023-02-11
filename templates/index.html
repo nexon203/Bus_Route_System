@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+          text-align: center;
+          margin-top: 110px;
+          font-size: 36px;
+          font-weight: bold;
+          font-family: Arial, sans-serif;
+        }
+        .btn {
+          padding: 10px 20px;
+          background-color: #06b6f6;
+          border: none;
+          border-radius: 5px;
+          margin: 3px;
+          margin-top: 40px;
+          font-size: 20px;
+          color: rgb(256, 256, 256);
+        }
+      </style>
+</head>
+<body>
+    <div class="header">BUS ROUTE SYSTEM</div>
+    <div style="display: flex; justify-content: center;">
+      
+        <form action="{% url 'buses' %}" method="get">
+          <input class="btn" type="submit" value="Buses">
+        </form>
+      
+        <form action="{% url 'routes' %}" method="get">
+          <input class="btn" type="submit" value="Routes">
+        </form>
+
+    </div>
+</body>
+</html>

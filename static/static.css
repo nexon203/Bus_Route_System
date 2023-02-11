@@ -1,0 +1,19 @@
+ th {
+    width: 256px; 
+    height: 40px; 
+    text-align:center
+}
+
+td {
+    width: 256px; 
+    height: 40px; 
+    text-align:center
+}
+
+tbody tr:hover {
+background-color: lightgray;
+}
+
+td {
+    border-bottom: 1px solid rgb(228, 223, 223);
+}
